@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="reset.css">
+  </head>
+  </head>
+  <body>
+    <h1> CSS Text </h1>
+
+            <ul> Fonts are grouped in 5 generic families: 
+                <li> serif </li>
+                <li> sans-serif </li>
+                <li> monospace </li>
+                <li> cursive </li>
+                <li> fantasy </li>
+            </ul>
+            <br>
+            You can apply it to whole html document with: 
+            <br>
+            <samp> body{ font-family: sans-serif;} </samp>
+        </p>
+        <h2> Web-safe fonts</h2>
+        <P> To make your web page the same on all computers use the name of the font. </P>
+        <samp>body{ font-family: Arial;}</samp>
+          <ul> There are 9 Web-safe fonts   
+            <li>Arial</li>
+            <li>Arial Black</li>
+            <li>Comic Sans MS</li>
+            <li>Courier New</li>
+            <li>Georgia </li>
+            <li>Impact</li>
+            <li>Times New Roman</li>
+            <li>Trebuchet MS</li>
+            <li>Verdana</li>
+          </ul>
+        <p> You can define fallback values by writing a list of font families:
+          <samp> body{ font-family: Arial, Verdana, sans-serif;} </samp>
+            It will look fr Arial first, then Verdana etc
+            Use a generic family as last value. </p>
+        <h2> Font Style Tags</h2>
+          <samp> p{ font-size: 16px;} - change font size </samp>
+          <br>
+          <samp> h2{ font-style: italic;} - change to italic, default is normal </samp> 
+          <br>
+          <samp> h2{ font-weight: bold;} - change font to bold </samp>
+          <br>
+          <p>Depending on the <code class="language-plaintext highlighter-rouge">font-family</code> used, there is a range of font weights available, from <code class="language-plaintext highlighter-rouge">100</code> to <code class="language-plaintext highlighter-rouge">900</code>:</p>
+
+          <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">font-weight</span><span class="o">:</span> <span class="nt">100</span><span class="o">;</span> <span class="c">/* Thin */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">200</span><span class="o">;</span> <span class="c">/* Extra Light */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">300</span><span class="o">;</span> <span class="c">/* Light */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">400</span><span class="o">;</span> <span class="c">/* Which is like font-weight: normal; */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">500</span><span class="o">;</span> <span class="c">/* Medium */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">600</span><span class="o">;</span> <span class="c">/* Semi Bold */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">700</span><span class="o">;</span> <span class="c">/* Which is like font-weight: bold; */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">800</span><span class="o">;</span> <span class="c">/* Extra Bold */</span>
+          <span class="nt">font-weight</span><span class="o">:</span> <span class="nt">900</span><span class="o">;</span> <span class="c">/* Ultra Bold */</span></code></pre></figure>
+        <h2> Line Spacing </h2>
+        <p> for body text, a line height of 1.5 times the size of the text is recommended.
+          for headings, a line height of 1.2 is recommended </p>
+          <samp>body{ font-size: 16px; line-height: 1.5;</samp>
+        <h2> CSS Font Shorthand </h2>
+        <p> You can use shorthand to style the text all in one go</p>
+            <br>
+            <samp>body{ font: italic small-caps bold 16px/1.5 Arial, sans-serif;}</samp>
+            <p> Must be in that order </p>
+            <br>
+            <a href: https:"//marksheet.io/css-font-shorthand.html" target=_blank> Click Here for more information</a> </p> 
+        <h2>Other Text Alterations</h2>
+            <samp> body{ text-align: left;} - aligns text to left, can also use right
+              center
+              justify</samp>
+            <br>
+            <br>
+            <samp> .deleted{ text-decoration: line-through;} - text-decoration puts a line through the text can also use overline
+              underline
+              line-through </samp>
+            <br>
+            <samp>blockquote{ text-indent: 30px;} - Adds space before the first word, use padding for whole block of text </samp> 
+            <br>
+            <samp>h1{ text-shadow: 0 2px 5px rgba(0,0,0,0.5);} - add shadow to the text </samp> 
+          </body>
+</html>
