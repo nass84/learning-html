@@ -1,42 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <p>CSS stands for  Cascading Style Sheets. 
-    <br>
-    You can either style it in the HTML element  
-    <!-- <p style="color: red;">This text is important.</p>-->
-    <br>
-    Or you can use style tag in the head of your html doc 
-    <!-- <html>
-         <head>
-          <title>Hello World</title>
-        <style type="text/css">
-        p{ color: red;}
-        </style>
-        </head>
-        <body>
-        <p>This paragraph will be red.</p>
-        </body>
-        </html>
-        -->
-    <br>
-    <em>Preferred method</em> You can write CSS in a seperate file using .css extenstion and link to HTML using link tag.
-    <!-- <html>
-        <head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1> CSS </h1>
+        <p>CSS stands for  Cascading Style Sheets. 
+        <br>
+        You can either style it in the HTML element  
+        <!-- <p style="color: red;">This text is important.</p>-->
+        <br>
+        Or you can use style tag in the head of your html doc 
+        <!-- <html>
+            <head>
             <title>Hello World</title>
-            <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
-        <body>
+            <style type="text/css">
+            p{ color: red;}
+            </style>
+            </head>
+            <body>
             <p>This paragraph will be red.</p>
-        </body>
-        </html> -->
-</p> 
+            </body>
+            </html>
+            -->
+        <br>
+        <em>Preferred method</em> You can write CSS in a seperate file using .css extenstion and link to HTML using link tag.
+        <!-- <html>
+            <head>
+                <title>Hello World</title>
+                <link rel="stylesheet" type="text/css" href="style.css">
+            </head>
+            <body>
+                <p>This paragraph will be red.</p>
+            </body>
+            </html> -->
+    </p> 
+
+    <blockquote> CSS is a 3-part process:
+
+        the selector defines who is targeted, which HTML element(s)
+        the property defines what charateristic to alter
+        the value defines how to alter that charateristic</blockquote>
+
+    <q> We can have multiple selectors, multiple properties, and sometimes (but rarely) multiple values. </q>
+        <!-- /* A CSS rule */
+    selector{ property: value;}
+    You can read that as:
+
+    who{ what: how;} -->
+    <h2>Generic tag selectors</h2>
+    <p> 
+        Targeting generic HTML tags is easy: just use the tag name.</p>
+        <!-- 
+        a{ /* Links */ }
+        p{ /* Paragraphs */ }
+        ul{ /* Unordered lists */ }
+        li{ /* List items */ } -->
+
+        <h2>class</h2>
+
+    <p class="classexample"> You can use class to style a certain paragraph or html element class="classname" For the CSS you have to put.classname </p>
+    <h2>id</h2>
+    <p id="idexample"> For id you use a # in the CSS #idexample and put id="idexample" in html, this over rides the paragraph rules</p>
+        
+    <h2>Combining selectors</h2>
+    <p id="combine">If you want to combine selectors you can add a . between them i.e em.date {
+        color: blue;
+      } The em.date combines:
+
+      a tag selector em
+      a class selector .date
+      It will only apply to the em class="date" not any other .date or em </em> </p> 
+      
+      <h2>Hierachy</h2>
+      <p id="hierachy"> A space in a selector defines a ancestor/descendant relationship. Let’s say we want the links in our header to be in red:
+
+        header a {
+          color: red;
+        }
+        This can be read from right to left as: “Select all a elements that are within a header element”. This will prevent all other links (that aren’t in the header) from being affected.</p>
+    <h2> 
+        <a href="https://www.youtube.com/watch?v=TkyLnWm1iCs" target=_blank class ="a"> Pseudo-class selectors - Hover</a>
+    </h2>
+        <p> HTML elements can have different states. The most common case is when you hover over a link. It’s possible in CSS to apply a different style when such an event occurs.
+
+            Pseudo-class selectors are attached to usual selectors and start with a colon ::
+            
+            a {
+              color: blue;
+            }
+            
+            a:hover {
+              color: red;
+            } 
+        </p>    
 </body>
 </html>

@@ -1,1 +1,26 @@
-p{ color: red;}
+p{ color: red;} /* this changes all the paragraphs*/
+
+q, /* This will change all the q and blockquotes*/
+blockquote{
+  background: lightgreen; /*this changes the background of the text*/ 
+  color: blueviolet; /*this changes the text colour*/
+}
+
+.classexample { 
+    color: green;
+}
+
+#idexample {
+    color:hotpink;
+    background: black;
+}
+
+.a {
+    color: blue;
+  }
+  
+  a:hover {
+    color: red;
+  }
+
+  
