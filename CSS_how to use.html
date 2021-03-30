@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="reset.css">
     </head>
     <body>
         <h1> CSS </h1>
@@ -98,5 +99,51 @@
               color: red;
             } 
         </p>    
+        <h2> CSS Inheritence </h2>
+        <p>To change everything on the page you can use the body or html tag
+            <br>
+            Only a few CSS properties can be inherited from ancestors. They are mainly text properties:
+            <strong><br>
+                *text color<br>
+                *font (family, size, style, weight)<br>
+                *line-height
+            </strong>       
+        </p>
+        <h2>Order of importance</h2>
+
+        <ul> The selector with the highest score wins <br>
+            <li> #id selectors are worth 100 </li>
+            <li> .class selectors are worth 10 </li>
+            <li> tag selectors are worth 1 </li>
+        </ul>
+        <p>Therefore id will take preference over everything elements </p>
+        <h2>Pick a colour pallet</h2>
+            <p>Usually, when choosing colors, you don’t write them directly. You either use a color picker, or copy/paste it from Photoshop, or choose a colour palette somewhere.<a href="https://www.colourlovers.com/palettes" taget:_blank>https://www.colourlovers.com/palettes </a> has a good selection of pallets <br>
+            </p>
+        <h2>Size Units </h2>
+        <p> There many CSS properties that require size units:
+            <ul>
+                <li>font-size defines the size of the text</li> 
+                <li>border-width defines the weight of element borders</li> 
+                <li> margin defines the spacing between elements</li> 
+                <li>left/right/top/bottom allows to position and move elements</li> 
+            </ul>
+            
+            The most used units are:
+            <ul> <strong>
+                <li>px for pixels</li>
+                <li>% for percentage</li>
+                <li>em for sizing relative to the parent’s font-size value.</li>
+            </strong> </ul>   
+            
+            The difference between rem and em is that rem values are fixed while em values can multiply between each other.
+
+If you set your html{ font-size: 18px;}:
+
+2rem will always be equal to 36px, no matter where you use in your CSS
+2em will always be equal to double the parent’s font-size, so not necessarily 36px
+<br>
+<a href="https://marksheet.io/css-size-units.html" target=_blank id="a">Example</a>
+</p>     
 </body>
 </html>

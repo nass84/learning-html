@@ -1,21 +1,38 @@
-p{ color: red;} /* this changes all the paragraphs*/
+/* The em unit is interesting as you define font sizes of HTML elements relative to one another. 
+For example, you want your <h1> to be twice as big as your body text, 
+your <h2> only 1.5 times as big, and your sidebar slightly smaller. */
+body{ font-size: 18px;}
+h1{ font-size: 2em;}        /* = 32px */
+h2{ font-size: 1.5em;}      /* = 24px */
+aside{ font-size: 0.75em;}  /* = 12px */
 
-q, /* This will change all the q and blockquotes*/
+
+/* this changes all the paragraphs*/
+p{ 
+    color: darkblue;
+} 
+
+
+/* This will change all the q and blockquotes*/
+q, 
 blockquote{
   background: lightgreen; /*this changes the background of the text*/ 
   color: blueviolet; /*this changes the text colour*/
 }
 
+/* if you want to change a class you put a . before the name of a class*/
 .classexample { 
     color: green;
 }
 
-#idexample {
+/* if you want to change an id you put a # before the name of the id*/
+#idexample { 
     color:hotpink;
-    background: black;
+    background:rgba(0, 0, 0, 0.8);};
 }
 
-.a {
+/* Pseudo class such as a change when you hover over it*/
+.a { 
     color: blue;
   }
   
@@ -23,4 +40,5 @@ blockquote{
     color: red;
   }
 
-  
+  /* increase font size of a tag*/
+  strong{ font-size: 120%;}
