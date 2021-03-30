@@ -9,36 +9,37 @@
         <link rel="stylesheet" type="text/css" href="reset.css">
     </head>
     <body>
-        <h1> CSS </h1>
+        <h1> CSS Notes </h1>
         <p>CSS stands for  Cascading Style Sheets. 
-        <br>
-        You can either style it in the HTML element  
-        <!-- <p style="color: red;">This text is important.</p>-->
-        <br>
-        Or you can use style tag in the head of your html doc 
-        <!-- <html>
-            <head>
-            <title>Hello World</title>
-            <style type="text/css">
-            p{ color: red;}
-            </style>
-            </head>
-            <body>
-            <p>This paragraph will be red.</p>
-            </body>
-            </html>
-            -->
-        <br>
-        <em>Preferred method</em> You can write CSS in a seperate file using .css extenstion and link to HTML using link tag.
-        <!-- <html>
-            <head>
+            <br>
+            You can either style it in the HTML element  
+            <br>
+            <samp> style="color: red;">This text is important. </samp>
+            <br>
+            Or you can use style tag in the head of your html doc 
+            <samp>  <html>
+                <head>
                 <title>Hello World</title>
-                <link rel="stylesheet" type="text/css" href="style.css">
-            </head>
-            <body>
+                <style type="text/css">
+                p{ color: red;}
+                </style>
+                </head>
+                <body>
                 <p>This paragraph will be red.</p>
-            </body>
-            </html> -->
+                </body>
+                </html>
+            </samp>
+            <br>
+            <em>Preferred method</em> You can write CSS in a seperate file using .css extenstion and link to HTML using link tag.
+            <samp> <html>
+                <head>
+                    <title>Hello World</title>
+                    <link rel="stylesheet" type="text/css" href="style.css">
+                </head>
+                <body>
+                    <p>This paragraph will be red.</p>
+                </body>
+                </html> </samp>
     </p> 
 
     <blockquote> CSS is a 3-part process:
@@ -48,19 +49,19 @@
         the value defines how to alter that charateristic</blockquote>
 
     <q> We can have multiple selectors, multiple properties, and sometimes (but rarely) multiple values. </q>
-        <!-- /* A CSS rule */
+        <pre>/* A CSS rule */
     selector{ property: value;}
     You can read that as:
 
-    who{ what: how;} -->
+    who{ what: how;} </pre> 
     <h2>Generic tag selectors</h2>
     <p> 
         Targeting generic HTML tags is easy: just use the tag name.</p>
-        <!-- 
+        <pre>  
         a{ /* Links */ }
         p{ /* Paragraphs */ }
         ul{ /* Unordered lists */ }
-        li{ /* List items */ } -->
+        li{ /* List items */ } </pre>
 
         <h2>class</h2>
 
@@ -144,6 +145,6 @@ If you set your html{ font-size: 18px;}:
 2em will always be equal to double the parent’s font-size, so not necessarily 36px
 <br>
 <a href="https://marksheet.io/css-size-units.html" target=_blank id="a">Example</a>
-</p>     
+</p> 
 </body>
 </html>
