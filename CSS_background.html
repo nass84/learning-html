@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Background</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="reset.css">
+  </head>
+  <body>
+    <h1> Background </h1>
+    <ul> There are 2 types of gradients in CSS:
+        <li> linear: colors go from point to another, in a straight line </li>
+        <li> radials: colors go from the center of a circle to its edges, in all directions </li>
+        <br>
+          A gradient is considered a background image and must be used with the according property.
+    </ul>
+    <h2> Linear </h2>
+      <samp> div{ background-image: linear-gradient(red, blue);} </samp>
+      <p> Will make that element be red on top and fade to blue </p>
+      <samp> div{ background-image: linear-gradient(to bottom right, yellow, purple); width: 200px;}</samp>
+      <p> A diagonal gradient from the top left corner to the bottom left one </p>
+      <samp> div{ background-image: linear-gradient(orange, grey, yellow); width: 150px;}</samp>
+      <p> You can insert as many colors as you want. They will be equally distributed along the axis:
+        <br>
+        2 colors: 0% and 100%
+        <br>
+        3 colors: 0%, 50% and 100%
+        <br>
+        4 colors: 0%, 33%, 67% and 100%
+      </p>
+    <h2> Radials</h2>  
+      <p> While linear gradients follow a single-line axis, radial gradients spread out in all directions.  </p>
+      <samp> div{ background-image: radial-gradient(red, yellow); padding: 1rem; width: 300px;} </samp>
+      <p> Looks like the sun </p>
+    
+    <h2> Buttons </h2>
+    <samp> .button-grey  { background-image: linear-gradient(#f2f2f2, #f2f2f2);}
+      .button-yellow{ background-image: linear-gradient(#fce374, #fcdf5b);}
+      .button-orange{ background-image: linear-gradient(#f58a38, #f57c20);}
+      .button-red   { background-image: linear-gradient(#ed6d64, #ed574c);}
+      .button-purple{ background-image: linear-gradient(#847bba, #7568ba);}
+      .button-blue  { background-image: linear-gradient(#42b0e3, #2ba9e3);}
+      .button-green { background-image: linear-gradient(#97cc76, #8bcc62);}</samp> 
+    </body>
+</html>

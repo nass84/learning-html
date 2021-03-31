@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Advanced</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="reset.css">
+  </head>
+  <body>
+    <h1> 3 Types of CSS Selectors</h1>
+        <ul> Ther are: </ul>
+            <li> generic where p in CSS targets p HTML elements </li>
+            <li> classes where .intro in CSS targets HTML elements with a class="intro" attribute </li>
+            <li> ids where #logo in CSS targets HTML elements with a id="logo" attribute </li>
+
+    <h2>Hover</h2>
+
+        <samp> a{ color: blue;}
+            <br>
+            a:hover{ color: red;} </samp>
+        <h2> Visited </h2>     
+            <samp> a{ color: dodgerblue;}
+            <br>
+            a:visited{ color: rebeccapurple; </samp> 
+    
+    <h2>Focus</h2>
+
+        <samp>.form-input{ border: 2px solid grey; padding: 5px;}
+            <br>
+            .form-input:focus{ background: lightyellow; border-color: blue; outline: none;}</samp>
+        <p> The outline: none; rule removes the glow from the input </p>         
+    
+    <h2> First Child and Last Child </h2>
+        <samp>li:first-child{ background: greenyellow;}
+            <br>
+            li:last-child{ background: lightsalmon;}</samp> 
+        <p> Targets the first and last item in a list </p>
+        <samp> li:nth-child(2){ background: violet;} </samp>    
+        <p> Targets the 2nd item in the list </p>
+        <samp> li:nth-child(odd){ background: gold;} </samp>
+        <p> targets the odd element, every 2nd starting with 1st can use even instead </p>
+        <samp> li:nth-child(3n){ background: hotpink;} </samp>
+        <p> targets every 3rd element, You can read :nth-child(3n) as “Target each element whose position is dividable by 3”. In our case, it targeted both the 3rd and 6th list items:</p>
+        <samp> li:nth-child(3n+1){ background: limegreen;} </samp>
+        <p> targets the 1st and every third item, The 3n+1 has two parts:
+            <br>
+            3n selects every 3rd item
+            +1 offsets the start by 1 </p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"> Other examples of pseudo classes https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes </a>
+
+        
+
+
+    </body>
+</html>

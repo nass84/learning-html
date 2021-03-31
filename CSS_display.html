@@ -24,7 +24,30 @@
             <samp> .gone-baby-gone{ display: none;} </samp>
             <h2> Using hidden </h2>
             <samp> .hollow-man{ visibility: hidden;} - hides the class </samp>  
+        <h2> Content Overflow</h2>   
+            <a href="https://marksheet.io/css-height-width-overflow.html"> Example - https://marksheet.io/css-height-width-overflow.html </a>
+            <p> Beware of fixed dimensions
+                Applying specific dimensions are often required for a design to look visually appealing but can have unintended consequences. In that regard:
                 
-            
-        </body>
+                make sure your content doesn’t overflow
+                if it does, use <strong>overflow: hidden</strong>  or <strong> overflow: auto </strong> to prevent your design from breaking</p>         
+        <h2> Padding and Margins</h2>
+            <p> If padding adds space inside an element (between its border and its content), margins adds space outside between an element and other elements.</p>
+            <p> Ask yourself why you’re spacing things. Is it to allow the inner content to breath more? Or is to allow the whole element to breath more? It’s padding in the first case, margin in the second.</p>
+                <samp> blockquote{ padding: 20px;}
+                    /* Is equivalent to */ 
+                    <br>
+                    blockquote{ padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;} </samp>
+                    <br>
+                    <samp> blockquote{ padding: 20px 0 10px 50px;} </samp>
+                <p> The order is top, right, bottom and left.</p>
+        <h2> Float </h2>
+            <p> The purpose of floating an element is to push it to one side and make the text wrap around it. </p>
+                <samp> img{ float: left;} - pushes image to left </samp>
+            <p> The clear property allows to push elements after the float. It can only be applied on block elements. </p>
+                <samp> img{ float: left;} 
+                    <br> 
+                    span{ clear: left; display: block;} </samp>
+            <p> Instead of having the text pushed next to the image, the clear: left pushes the text below the image.</p>
+    </body>
 </html>
